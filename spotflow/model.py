@@ -431,7 +431,7 @@ class VarStateHistory:
 
     def __str__(self):
         values = self.distinct_sequential_values()
-        values_str = ', '.join(map(str, values))
+        values_str = ' #SPLITTER# '.join(map(str, values))
         return f'{self.name}: {values_str}'
 
 
